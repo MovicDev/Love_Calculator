@@ -1,9 +1,15 @@
-
+var song1 ="audio1.mp3"
+var song2 ="audio2.mp3"
+var song3 ="audio3.mp3"
+var songToPlay1 = new Audio(song1)
+var songToPlay2 = new Audio(song2)
+var songToPlay3 = new Audio(song3)
 
 const cal = () => {
     let loveCal = Math.round(Math.random()*99)
     if (firstName.value === '' || secondName.value === '') {
-        alert('Space can nto be empty')
+        result.style.display = "block"
+        result.innerHTML = `<p class='p-3'>Stop Disturbing your self!!!, if you don't put Names it won.t work </p>`
     } else {
             if(loveCal >= 0 && loveCal < 30){
                 result.style.display = "block"
@@ -11,24 +17,28 @@ const cal = () => {
                 dispCal.style.display = 'block'
                 dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML =`<p class='text-center'>${loveCal}%Match</p> `
+                songToPlay3.play()
             } else if(loveCal >= 30 && loveCal < 65){
                 result.style.display = "block"
                 result.innerHTML = `<p class='p-3'>Hi  <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>, <span style='color:#f23f3f'>${secondName.value}</span> is just using scope for you, your relationship can never work</p>`
                 dispCal.style.display = 'block'
                 dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML = `<p class='text-center'>${loveCal}%Match</p>`
+                songToPlay1.play()
             } else if(loveCal >= 65 && loveCal < 80){
                 result.style.display = "block"
                 result.innerHTML = `<p class='p-3'>Hi <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>,<span style='color:#f23f3f'>${secondName.value}</span> Really Love you but i cant say maybe the love is real.I will advices you to distant yourself from ${secondName.value}  for some time</p>`
                 dispCal.style.display = 'block'
                 dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML = `<p class='text-center'>${loveCal}%Match</p>`
+                songToPlay2.play()
             } else if(loveCal >= 80 && loveCal <= 100){
                 result.style.display = "block"
                 result.innerHTML = `<p class='p-3'>Hello <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>, Congratulation. <span style='color:#f23f3f'>${secondName.value}</span> is  <span style='#f23f3f'>${loverCal.value}%</span> of being your soul mate</p>`
                 dispCal.style.display = 'block'
                 dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML = `<p class='text-center'>${loveCal}%Match</p>`
+                songToPlay2.play()
             }  
             
         }
