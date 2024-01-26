@@ -9,18 +9,19 @@ const cal = () => {
     let loveCal = Math.round(Math.random()*99)
     if (firstName.value === '' || secondName.value === '') {
         result.style.display = "block"
+        dispCal.style.display = 'none'
         result.innerHTML = `<p class='p-3'>Stop Disturbing your self!!!, if you don't put Names it won.t work </p>`
     } else {
             if(loveCal >= 0 && loveCal < 30){
                 result.style.display = "block"
-                result.innerHTML = `<p class='p-3'>Hey!! <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>, if you love your life. Run form <span style='color:#f23f3f'>${secondName.value}</span> you guys can never be together</p>`
+                result.innerHTML = `<p class='p-3'>Hey!! <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>, if you love your life. Run form <span style='color:#f23f3f'>${secondName.value}</span> you guys can never be together😭</p>`
                 dispCal.style.display = 'block'
                 dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML =`<p class='text-center'>${loveCal}%Match</p> `
                 songToPlay3.play()
             } else if(loveCal >= 30 && loveCal < 65){
                 result.style.display = "block"
-                result.innerHTML = `<p class='p-3'>Hi  <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>, <span style='color:#f23f3f'>${secondName.value}</span> is just using scope for you, your relationship can never work</p>`
+                result.innerHTML = `<p class='p-3'>Hi  <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>,so sad😥 <span style='color:#f23f3f'>${secondName.value}</span> is just using scope for you, your relationship can never work</p>`
                 dispCal.style.display = 'block'
                 dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML = `<p class='text-center'>${loveCal}%Match</p>`
