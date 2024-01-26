@@ -9,21 +9,25 @@ const cal = () => {
                 result.style.display = "block"
                 result.innerHTML = `<p class='p-3'>Hey!! <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>, if you love your life. Run form <span style='color:#f23f3f'>${secondName.value}</span> you guys can never be together</p>`
                 dispCal.style.display = 'block'
+                dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML =`<p class='text-center'>${loveCal}%Match</p> `
             } else if(loveCal >= 30 && loveCal < 65){
                 result.style.display = "block"
                 result.innerHTML = `<p class='p-3'>Hi  <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>, <span style='color:#f23f3f'>${secondName.value}</span> is just using scope for you, your relationship can never work</p>`
                 dispCal.style.display = 'block'
+                dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML = `<p class='text-center'>${loveCal}%Match</p>`
             } else if(loveCal >= 65 && loveCal < 80){
                 result.style.display = "block"
                 result.innerHTML = `<p class='p-3'>Hi <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>,<span style='color:#f23f3f'>${secondName.value}</span> Really Love you but i cant say maybe the love is real.I will advices you to distant yourself from ${secondName.value}  for some time</p>`
                 dispCal.style.display = 'block'
+                dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML = `<p class='text-center'>${loveCal}%Match</p>`
             } else if(loveCal >= 80 && loveCal <= 100){
                 result.style.display = "block"
                 result.innerHTML = `<p class='p-3'>Hello <span style='color:#FFC83D' class='fw-bold'>${firstName.value}</span>, Congratulation. <span style='color:#f23f3f'>${secondName.value}</span> is  <span style='#f23f3f'>${loverCal.value}%</span> of being your soul mate</p>`
                 dispCal.style.display = 'block'
+                dispCal.style.color = '#f23f3f'
                 dispCal.innerHTML = `<p class='text-center'>${loveCal}%Match</p>`
             }  
             
